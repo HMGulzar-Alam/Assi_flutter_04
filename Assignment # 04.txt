@@ -1,0 +1,112 @@
+
+************************************QUESTUIO#02*********************************************
+void main() {
+  table(2);
+}
+ table(int a) {
+    for (var i = 0; i <= 10; i++) {
+      print('${a} X ${i} = ${a * i}');
+    }
+
+}
+
+***********************************QUESTUIO#03*********************************************
+
+void main() {
+ table(int a) {
+    List<dynamic> lst = [2, 4, 6, 8, 9];
+
+    for (var i in lst) {
+      print('${i} / ${a} = ${i / a}');
+    }
+  }
+
+  table(2);
+}
+
+*********************************QUESTUIO#05*********************************************
+
+ void main() {
+//   var redmi = new Model();
+//   redmi.show_model('A100');
+
+//   var lg = new Model();
+//   lg.show_model('b400');
+// }
+
+// class Model {
+//   late String mobile;
+
+//   show_model(md) {
+//     mobile = md;
+//     print(mobile);
+//   }
+
+
+
+********************************QUESTUIO#06*********************************************
+
+
+ void main() 
+ var info = new name();
+  info.show_name('My name is Gulzar');
+}
+
+class name {
+  late String a;
+  show_name(md) {
+    a = md;
+    print(a);
+  }
+}
+
+
+********************************QUESTUIO#07*********************************************
+void main() {
+  var data = new mobile('Gulzar', 24, 'Bachelors');
+  data.show();
+}
+
+class mobile {
+  late String name;
+  late int age;
+  late String education;
+
+  mobile(n, a, e) {
+    this.name = n;
+    this.age = a;
+    this.education = e;
+    print("Constructor called");
+  }
+  show() {
+    print(name);
+    print(age);
+    print(education);
+  }
+}
+
+
+
+
+********************************QUESTUIO#08*********************************************
+void main() {
+  var obj = son();
+  obj.get_value(100);
+  obj.show();
+}
+
+class father {
+  late int money;
+  get_value(m) {
+    money = m;
+  }
+}
+
+class son extends father {
+  String car = "Suzuki";
+  show() {
+    print(car);
+    print(money);
+  }
+}
+
